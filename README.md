@@ -63,3 +63,36 @@ sudo apt-get install hping3
 ```
 
 
+# Working
+* Ensure the Installation is done properly without any errors.
+* Run the following command to start sFlow-RT and run the ryu.js script
+    ```
+    env "RTPROP=-Dscript.file=$PWD/ryu.js" sflow-rt/start.sh
+    ```
+* Start the Mininet Topology. Either run the Topology.py or directly make a simple mininet topology using the below command
+
+    ```
+    sudo mn --custom sflow-rt/extras/sflow.py --link tc,bw=10 --controller=remote,ip=127.0.0.1 --topo tree,depth=2,fanout=2
+    ```
+
+    or 
+
+    ```
+    sudo python3 topology.py
+    ```
+
+* Run ryu application
+    ```
+    ryu-manager ryu.app.simple_switch_13 ryu.app.ofctl_rest
+    ```
+
+* Enable the Sflow in the switch s1
+    ```
+    sudo ovs-vsctl -- --id=@sflow create sflow agent=lo target=127.0.0.1 sampling=10 polling=10 -- -- set bridge s1 sflow=@sflow
+    ```
+
+* Open the sflow-rt Dashboard
+    ```
+    http://localhost:8008/html/index.html
+    ```
+    Open the mininet dashboard from the menu
