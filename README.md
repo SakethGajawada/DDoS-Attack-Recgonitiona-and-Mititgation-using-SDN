@@ -77,9 +77,19 @@ The key tools used in this project are:
 </div>
 
 ### Pingall to ensure our topology is connected to ryu controller and working.
-### Open localhost:8008 and view mininet dashborad. the below diagram shows the behaviour of a normal data transfer.
-### Start attacking/flooding the network. Either run the 
-  <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/ddos_attack.png" />
-  <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/blocking.png" />\
-  <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/flowentry%20for%20blocking.png" />
+### Open localhost:8008 and view mininet dashborad.
+### Start attacking/flooding the network. Either run the the hping3 command mentioned earlier or any one of the generate_ddos_traffic.py/generate_ddos_traffic_1.py.
+### Below Digaram of mininet dasbhboard shows the sudden spike in the transfer rate of incoming packets.
+<div align ="center">
+<img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/ddos_attack.png" />
+</div>
 
+### The below diagram shows that whenever there is flooding happening at a node(host), It is blocked with the help of sflow.  
+<div align ="center">
+<img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/blocking.png" />\
+</div>
+
+### We can also see the POST command from RYU controller terminal given below communicating with SFlow
+<div align ="center">
+<img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/flowentry%20for%20blocking.png" />
+</div>
