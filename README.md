@@ -101,6 +101,6 @@ sudo apt-get install hping3
 
 ## SFLOW and Mininet Dashboard
 
-<img src="![Alt text](images/sflow.png)" />
+<img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/sflow.png)https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/sflow.png" />
 
 ## Mininet
