@@ -49,7 +49,7 @@ The key tools used in this project are:
     ```
     http://localhost:8008/html/index.html
     ```
-    Open the mininet dashboard from the menu.
+    Open the mininet dashboard from apps in the menu.
 * Run hping3 to attack the network
   ```
   h1 hping3 --flood --udp -k -s 53 h3
@@ -70,8 +70,15 @@ The key tools used in this project are:
   <div align="center">
   <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/ryu_manager.png" />
   </div>
-###
+  
+### Configure s1 flow (include SFlow)
+<div align="center">
   <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/flow-rule.png" />
+</div>
+
+### Pingall to ensure our topology is connected to ryu controller and working.
+### Open localhost:8008 and view mininet dashborad. the below diagram shows the behaviour of a normal data transfer.
+### Start attacking/flooding the network. Either run the 
   <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/ddos_attack.png" />
   <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/blocking.png" />\
   <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/flowentry%20for%20blocking.png" />
