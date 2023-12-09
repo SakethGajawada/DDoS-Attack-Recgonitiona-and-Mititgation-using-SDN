@@ -64,7 +64,7 @@ sudo apt-get install hping3
 
 
 # Working
-* Ensure the Installation is done properly without any errors.
+* Ensure the Installation is properly done without any errors.
 * Run the following command to start sFlow-RT and run the ryu.js script
     ```
     env "RTPROP=-Dscript.file=$PWD/ryu.js" sflow-rt/start.sh
@@ -95,4 +95,12 @@ sudo apt-get install hping3
     ```
     http://localhost:8008/html/index.html
     ```
-    Open the mininet dashboard from the menu
+    Open the mininet dashboard from the menu.
+
+# Results
+
+## SFLOW and Mininet Dashboard
+
+<img src="![Alt text](images/sflow.png)" />
+
+## Mininet
