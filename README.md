@@ -109,7 +109,7 @@ The key tools used in this project are:
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/packets_check.png">
 
 
-### When again the hping3 command is quit, sflow unblocks that particular path.
+### When again the hping3 command is quit, sflow unblocks that particular host/path.
 <div align ="center">
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/unblocking.png">
 </div>
