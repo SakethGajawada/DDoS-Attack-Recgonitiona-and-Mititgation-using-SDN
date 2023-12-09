@@ -54,6 +54,17 @@ The key tools used in this project are:
   ```
   h1 hping3 --flood --udp -k -s 53 h3
   ```
+* Check dump flows
+  ```
+  sudo ovs-ofctl -O OpenFlow13 dump-flows s1
+  ```   
+  ```
+  sudo ovs-ofctl -O OpenFlow13 dump-flows s2
+  ```   
+  ```
+  sudo ovs-ofctl -O OpenFlow13 dump-flows s3
+  ```   
+  
 # Results
 ### The below image shows the initialization of sflow-rt.
 <div align="center">
@@ -92,4 +103,13 @@ The key tools used in this project are:
 ### We can also see the POST command from RYU controller terminal given below communicating with SFlow
 <div align ="center">
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/flowentry%20for%20blocking.png" />
+</div>
+
+### Check by dumping flows. As you can see when we flood, the output action is automatically configured to drop by Sflow.
+<img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/packets_check.png">
+
+
+### When again the hping3 command is quit, sflow unblocks that particular path.
+<div align ="center">
+<img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/unblocking.png">
 </div>
