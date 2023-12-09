@@ -101,15 +101,15 @@ sudo apt-get install hping3
   h1 hping3 --flood --udp -k -s 53 h3
   ```
 # Results
-
-## SFLOW and Mininet Dashboard
-
+The below image shows the initialization of sflow-rt.
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/sflow.png" />
+Next, we set up the mininet. The below diagram is an example of a simple topology with 4 hosts and 3 switches.
+<img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/topo.png" />
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/mininet.png" />
+Below Image shows how ryu controller configuration should be done
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/ryu_manager.png" />
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/flow-rule.png" />
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/ddos_attack.png" />
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/blocking.png" />\
 <img src="https://github.com/SakethGajawada/DDoS-Attack-Recgonitiona-and-Mititgation-using-SDN/blob/main/images/flowentry%20for%20blocking.png" />
 
-## Mininet
